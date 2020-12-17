@@ -2,20 +2,23 @@ This is the homepage of Hejia Chen.
 
 ​      I am currently taking B.S in School of Computer Science and Technology, Xidian University, majoring in Internet of Things. Now I am focusing on the field of **Internet of Things** and **Natural Language Processing**.  
 
+---
 
-
-**Latest Paper:**
+**Latest Paper:** (Update at 2020/12/17)
 
 - *Generating Adequate Distractors for Multiple-Choice Questions*        Zhang, C., Sun, Y., Chen, H. and Wang, J.   KDIR2020
-
-
 
 **Homepages:**
 
 - My google scholar homepage: [link](https://scholar.google.com/citations?hl=zh-CN&user=vvoBfeMAAAAJ)
 - My researchgate profile: [link](https://www.researchgate.net/profile/Hejia_Chen2?ev=hdr_xprf&_sg=YxhGSZqm3A-XdE9iW_JHu9QeYFLPjqP1IIUTlLLPFUgGnU0qW2cuXkp7HtFwXnnYh9bDoFLchNYePTi4L7csotGo)
+- My CSDN blog: [link](https://blog.csdn.net/weixin_43038346)
 
- 
+---
+
+**More About Me:**
+
+- [Undergraduate Relevant Courses](.\subpage\grades.html) (Update at 2020/12/7)
 
 **GitHub Repos:**
 
@@ -24,7 +27,7 @@ There are some interesting and handful tools I developed and pushed to GitHub. F
 - [Pytex](https://github.com/HarryXD2018/PyTex): A python library that helps convert Python variables to Latex syntax. 
 - [GKB](https://github.com/HarryXD2018/gkb): Geographic Knowledge Base(Chinese Version Only)
 
-
+---
 
 **Contact Me:**
 
