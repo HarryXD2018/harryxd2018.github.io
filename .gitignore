@@ -1,4 +1,5 @@
 build/
+*.md
 /.idea/harryxd2018.github.io.iml
 /.idea/modules.xml
 /.idea/vcs.xml
