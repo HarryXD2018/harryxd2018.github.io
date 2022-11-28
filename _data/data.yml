@@ -69,12 +69,12 @@ education:
         details: |
           I am currently a one-year Ph.D student with State Key Laboratory of Virtual Reality Systems and Technology, Beihang University, supervised by Prof. Shuai Li. My research interest was Micro-expression Recognition (2022, BSc thesis w/ Xidian) and now I am working on Audio-driven 3D talking head.
 
-script: 
-    title: News
-    info: |
-        - (Nov.20.2022) I present an oral speech online about our recent work on digital standardized patient history asking system on ChinaVR 2022, Kuming, China. 
-        - (Aug.31.2022) My first day in BUAA.
-        - (Jun.29.2022) I receied my bachelor degree, bye bye Xidian!
+#script: 
+#    title: News
+#    info: |
+#       - (Nov.20.2022) I present an oral speech online about our recent work on digital standardized patient history asking system on ChinaVR 2022, Kuming, China. 
+#        - (Aug.31.2022) My first day in BUAA.
+#        - (Jun.29.2022) I receied my bachelor degree, bye bye Xidian!
         #publications:
         #title: Publications
         #intro: |
