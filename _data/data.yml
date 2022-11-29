@@ -58,16 +58,17 @@ career-profile:
 education:
     title: Education
     info:
+      - degree: Ph.D in Computer Application Technology
+        university: Beihang University (BUAA), China
+        time: 2022 - present
+        details: |
+            I am currently a first-year Ph.D student with State Key Laboratory of Virtual Reality Systems and Technology, Beihang University, supervised by Prof. Shuai Li. My research interest was Micro-expression Recognition (2022, BSc thesis w/ Xidian) and now I am working on Audio-driven 3D talking head.
       - degree: BSc in Computer Science and Technology
         university: Xidian University, China
         time: 2018 - 2022
         details: |
             I recived my bachelor degree from School of Computer Science and Technology, Xidian University in 2022. I was a student research intern at Center for Intelligence-Aided Teaching (CIAT lab) from 2020 to 2022, during which my research interests are Student Engagement Prediction (2020) and Head Pose Estimation (2021).  
-      - degree: Ph.D in Computer Application Technology
-        university: Beihang University (BUAA), China
-        time: 2022 - present
-        details: |
-          I am currently a one-year Ph.D student with State Key Laboratory of Virtual Reality Systems and Technology, Beihang University, supervised by Prof. Shuai Li. My research interest was Micro-expression Recognition (2022, BSc thesis w/ Xidian) and now I am working on Audio-driven 3D talking head.
+      
 
 #script: 
 #    title: News
