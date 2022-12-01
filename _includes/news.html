@@ -1,0 +1,26 @@
+{% assign news = site.data.data.news %}
+{% if news %}
+  <section class="section news-section">
+    <h2 class="section-title">
+      <span class="fa-stack fa-xs">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-light fa-newspaper fa-stack-1x fa-inverse"></i>
+		<!-- <i class="fas fa-duotone fab fa-google fa-sparkles fa-stack-1x fa-inverse"></i> -->
+      </span>
+      {{ news.title }}
+    </h2>
+
+    {% for a_news in news.info %}
+    <div class="item">
+	<ul> 
+	  <li>{{a_news.detail | markdownify}}</li>
+	  <!-- <li>[{{a_news.time | markdownify}}]: {{a_news.detail | markdownify}}</li> -->
+      <!-- <!-- <div class="details"> -->
+        <!-- {{ graduation.details | markdownify }} -->
+      <!-- </div><!--//details-->
+	</ul>
+    </div><!--//item-->
+    {% endfor %}
+
+  </section><!--//section-->
+{% endif %}
