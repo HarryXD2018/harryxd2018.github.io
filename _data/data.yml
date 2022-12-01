@@ -56,6 +56,16 @@ career-profile:
     title: About Me
     summary: |
         My name is Hejia Chen and now I am a first-year Ph.D student with Beihang University, supervised by Prof. Shuai Li. My research interest is Computer Vision and 3D Face tasks. 
+news:
+    title: News
+    info:
+        - detail: |
+            **[2022/11/20]**: I present an oral speech online about our recent work on digital standardized patient history asking system on ChinaVR 2022, Kuming, China. 
+        - detail: |
+            **[2022/08/31]**: My first day in BUAA.
+        - detail: |
+            **[2022/06/29]**: I receied my bachelor degree, bye bye Xidian!
+
 education:
     title: Education
     info:
@@ -63,12 +73,12 @@ education:
         university: Beihang University (BUAA), China
         time: 2022 - present
         details: |
-            I am currently a first-year Ph.D student with State Key Laboratory of Virtual Reality Systems and Technology, Beihang University, supervised by Prof. Shuai Li. My research interest was Micro-expression Recognition (2022, BSc thesis w/ Xidian) and now I am working on Audio-driven 3D talking head.
+            I am currently a first-year Ph.D student with State Key Laboratory of Virtual Reality Systems and Technology, Beihang University, supervised by Prof. Shuai Li. My research interest was **Micro-expression Recognition** (2022, BSc thesis w/ Xidian) and now I am working on **Audio-driven 3D Talking Head**.
       - degree: BSc in Computer Science and Technology
         university: Xidian University, China
         time: 2018 - 2022
         details: |
-            I recived my bachelor degree from School of Computer Science and Technology, Xidian University in 2022. I was a student research intern at Center for Intelligence-Aided Teaching (CIAT lab) from 2020 to 2022, during which my research interests are Student Engagement Prediction (2020) and Head Pose Estimation (2021).  
+            I recived my bachelor degree from School of Computer Science and Technology, Xidian University in 2022. I was a student research intern at Center for Intelligence-Aided Teaching (CIAT lab) from 2020 to 2022, during which my research interests are **Student Engagement Prediction** (2020) and **Head Pose Estimation** (2021).  
       
 
 #script: 
