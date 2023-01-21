@@ -55,7 +55,7 @@ sidebar:
 career-profile:
     title: About Me
     summary: |
-        My name is Hejia Chen and now I am a first-year Ph.D student with Beihang University, supervised by Prof. Shuai Li. My research interest is Computer Vision and 3D Face tasks. 
+        My name is Hejia Chen and now I am a first-year Ph.D student with Beihang University, supervised by Prof. Shuai Li. My research interests are **3D Audio-driven Avatar** and **Face Reconstruction**. 
         
         I am hosting some useful blogs, feel free to take a look!
         - [env installation cookbook](https://env.simple.ink)
@@ -64,7 +64,7 @@ news:
     title: News
     info:
         - detail: |
-            **[2022/11/20]**: I present an oral speech online about our recent work on digital standardized patient history asking system on ChinaVR 2022, Kuming, China. 
+            **[2022/11/20]**: I present an oral lecture online about our recent work on digital standardized patient history asking system on ChinaVR 2022, Kuming, China. 
         - detail: |
             **[2022/08/31]**: My first day in BUAA.
         - detail: |
