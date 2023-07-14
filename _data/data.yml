@@ -94,8 +94,8 @@ publications:
     papers:
       - title: Sequential Texts Driven Cohesive Motions Synthesis with Natural Transitions
         link: "#"
-        authors: S. Li, S. Zhang, W. Song, X. Zhang, **H. Chen**, A. Hao
-        conference: ICCV23
+        authors: S. Li, S. Zhuang, W. Song, X. Zhang, **H. Chen**, A. Hao
+        conference: ICCV'23
 
 #      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
 #        link: "#"
