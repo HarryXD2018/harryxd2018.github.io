@@ -187,16 +187,6 @@ p {
     overflow: hidden;
     margin-bottom: 2px;
   }
-
-  .publication-authors, .publication-conference {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 5px; /* 添加右边距来增加元素之间的间距 */
-  }
-  .publication-authors, .publication-conference {
-    flex: 1; /* 让元素平均分配父元素的宽度 */
-    margin-left: 20px;
-  }
   .job-title,
   .degree {
     color: $text-color;
@@ -243,13 +233,12 @@ p {
     font-style: normal;
     color: $text-grey;
     margin-bottom: 1px;
-    order: 2;
+    margin-left: 20px;
   }
   .publication-conference {
     font-style: italic;
-    color: #FDA246;
+    color: $text-color;
     margin-bottom: 1px;
-    order: 1;
   }
   .publications-section {
     .intro {
