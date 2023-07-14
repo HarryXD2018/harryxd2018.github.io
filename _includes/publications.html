@@ -19,9 +19,9 @@
   {% for publication in publications.papers %}
   <div class="item">
     {% if publication.link %}
-      <li><a href="{{ publication.link }}">{{ publication.conference }} {{ publication.title }}</a></li>
+      <li><b style="color: #269abc; font-weight: bold">{{ publication.conference}}</b> <a href="{{ publication.link }}">{{ publication.title }}</a></li>
     {% else %}
-      <li>{{ publication.conference }} {{ publication.title }}</li>
+      <li>{{ publication.conference}} {{ publication.title }}</li>
     {% endif %}
     <div class="publication-authors">{{ publication.authors | markdownify }}</div>
   </div><!--//item-->
