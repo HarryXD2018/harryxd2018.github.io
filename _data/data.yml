@@ -83,35 +83,28 @@ education:
         time: 2018 - 2022
         details: |
             I recived my bachelor degree from School of Computer Science and Technology, Xidian University in 2022. I was a student research intern at Center of Intelligence-Aided Teaching (CIAT lab) from 2020 to 2022, during which my research interests are **Student Engagement Prediction** (2020) and **Head Pose Estimation** (2021).  
-      
 
-#script: 
-#    title: News
-#    info: |
-#       - (Nov.20.2022) I present an oral speech online about our recent work on digital standardized patient history asking system on ChinaVR 2022, Kuming, China. 
-#        - (Aug.31.2022) My first day in BUAA.
-#        - (Jun.29.2022) I receied my bachelor degree, bye bye Xidian!
-        #publications:
-        #title: Publications
-        #intro: |
-        #You can list your publications in this section. Lorem ipsum dolor sit
-        #amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-        #bibendum fringilla a eu lectus.
-      #    papers:
-      #- title: The Art of Computer Programming
-      #  link: "#"
-      # authors: Donald E. Knuth
-      # conference: Addison-Wesley, 1968
-      #
-      #- title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-      # link: "#"
-      # authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-      # conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-      #
-      #- title: A syntax directed compiler for Algol 60
-      # link: "#"
-      #  authors: Edgar T. Irons
-      #  conference: "Comm. ACM 4 (1961), 51–55"
+publications:
+    title: Publications
+#    intro:
+#    intro: |
+#      You can list your publications in this section. Lorem ipsum dolor sit
+#      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#      bibendum fringilla a eu lectus.
+    papers:
+      - title: Sequential Texts Driven Cohesive Motions Synthesis with Natural Transitions
+        link: "#"
+        authors: S. Li, S. Zhang, W. Song, X. Zhang, **H. Chen**, A. Hao
+        conference: ICCV'23
+
+#      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#        link: "#"
+#        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+#      - title: A syntax directed compiler for Algol 60
+#        link: "#"/
+#        authors: Edgar T. Irons
+#        conference: "Comm. ACM 4 (1961), 51–55"
 
             #footer: >
             #Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
