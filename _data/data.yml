@@ -93,7 +93,7 @@ publications:
 #      bibendum fringilla a eu lectus.
     papers:
       - title: Sequential Texts Driven Cohesive Motions Synthesis with Natural Transitions
-        link: "#"
+        link: https://druthrie.github.io/STDM/
         authors: S. Li, S. Zhuang, W. Song, X. Zhang, **H. Chen**, A. Hao
         conference: ICCV'23
 
