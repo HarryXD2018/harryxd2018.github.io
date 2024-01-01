@@ -55,14 +55,13 @@ sidebar:
 career-profile:
     title: About Me
     summary: |
-        My name is Hejia Chen and now I am a first-year Ph.D student with Beihang University, supervised by Prof. Shuai Li. My research interests are **3D Audio-driven Avatar** and **Face Reconstruction**. 
-        
-        I am hosting some useful blogs, feel free to take a look!
-        - [env installation cookbook](https://env.simple.ink)
-        - [talking face dataset expo](https://talkingface.simple.ink)
+        My name is Hejia Chen and now I am a Ph.D student with Beihang University, supervised by Prof. Shuai Li. I am also a research intern with Y-tech, Kuaishou. My research interests are **3D Talking Face** and **Face Reenactment**. 
+
 news:
     title: News
     info:
+        - detail: |
+            **[2024/01/02]**: My first day with Y-tech, Kuaishou as a research intern.
         - detail: |
             **[2022/11/20]**: I present an oral lecture online about our recent work on digital standardized patient history asking system on ChinaVR 2022, Kuming, China. 
         - detail: |
