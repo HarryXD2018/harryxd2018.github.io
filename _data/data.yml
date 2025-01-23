@@ -93,12 +93,12 @@ publications:
     papers:
       - title: 'Cafe-Talk: Generating 3D Talking Face Animation with Multimodal Coarse- and Fine-grained Control'
         link: https://harryxd2018.github.io/      # TODO: update the link
-        authors: \*\*H. Chen\*\*, H. Zhang, S. Zhang, et al.
-        conference: ICLR'23
+        authors: '<strong>H. Chen</strong>, H. Zhang, S. Zhang, et al.'
+        conference: ICLR'25
 
       - title: Sequential Texts Driven Cohesive Motions Synthesis with Natural Transitions
         link: https://druthrie.github.io/sequential-texts-to-motion/
-        authors: S. Li, S. Zhuang, W. Song, X. Zhang, **H. Chen**, A. Hao
+        authors: 'S. Li, S. Zhuang, W. Song, X. Zhang, <strong>H. Chen</strong>, A. Hao'
         conference: ICCV'23
 
 #      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
