@@ -81,7 +81,7 @@ education:
         university: Xidian University, China
         time: 2018 - 2022
         details: |
-            I recived my bachelor degree from School of Computer Science and Technology, Xidian University in 2022. I was a student research intern at Center of Intelligence-Aided Teaching (CIAT lab) from 2020 to 2022, during which my research interests are **Student Engagement Prediction** (2020) and **Head Pose Estimation** (2021).  
+            I received my bachelor degree from School of Computer Science and Technology, Xidian University in 2022. I was a student research intern at Center of Intelligence-Aided Teaching (CIAT lab) from 2020 to 2022, during which my research interests are **Student Engagement Prediction** (2020) and **Head Pose Estimation** (2021).  
 
 publications:
     title: Publications
@@ -91,6 +91,11 @@ publications:
 #      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
 #      bibendum fringilla a eu lectus.
     papers:
+      - title: 'Cafe-Talk: Generating 3D Talking Face Animation with Multimodal Coarse- and Fine-grained Control'
+        link: https://harryxd2018.github.io/      # TODO: update the link
+        authors: **H. Chen**, H. Zhang, S. Zhang, et al.
+        conference: ICLR'23
+
       - title: Sequential Texts Driven Cohesive Motions Synthesis with Natural Transitions
         link: https://druthrie.github.io/sequential-texts-to-motion/
         authors: S. Li, S. Zhuang, W. Song, X. Zhang, **H. Chen**, A. Hao
