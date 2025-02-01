@@ -16,16 +16,36 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% for publication in publications.papers %}
-  <div class="item">
-    {% if publication.link %}
-      <li><b style="color: #269abc; font-weight: bold">{{ publication.conference}}</b> <a href="{{ publication.link }}" target="_blank">{{ publication.title }}</a></li>
-    {% else %}
-      <li>{{ publication.conference}} {{ publication.title }}</li>
+<!-- 修改后的 Jekyll 模板 -->
+{% for publication in publications.papers %}
+<div class="publication-block" style="margin-bottom: 20px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
+  {% if publication.link %}
+  <div>
+    <a href="{{ publication.link }}" target="_blank" style="font-size: 16px">{{ publication.title }}</a>
+  </div>
+  {% else %}
+  <div>
+    {{ publication.title }}
+  </div>
+  {% endif %}
+
+  <div class="publication-authors-teaser">
+    <div class="authors">
+      <div class="publication-authors">{{ publication.authors | markdownify }}</div>
+      {% if publication.tldr %}
+      <div class="publication-tldr">{{ publication.tldr | markdownify }}</div>
+      {% endif %}
+    </div>
+    {% if publication.teaser %}
+    <div class="teaser">
+      <img src="{{ publication.teaser }}" alt="Teaser" style="width: 100%;">
+    </div>
     {% endif %}
-    <div class="publication-authors">{{ publication.authors | markdownify }}</div>
-  </div><!--//item-->
-  {% endfor %}
+  </div>
+
+  <div class="conference-tag" style="background-color: {{ publication.color }};">{{ publication.conference }}</div>
+</div>
+{% endfor %}
 
 </section><!--//section-->
 {% endif %}

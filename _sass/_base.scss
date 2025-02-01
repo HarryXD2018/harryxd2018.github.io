@@ -37,7 +37,7 @@ p {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   background: $theme-color;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   @include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
@@ -281,4 +281,50 @@ p {
   .fa-heart {
     color: $heart;
   }
+}
+
+.publication-authors-teaser {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .publication-authors-teaser > div {
+    flex: 0 0 100%; /* 默认每个子项占据一整行 */
+  }
+  .publication-authors {
+    margin-bottom: 1rem;
+  }
+  .publication-tldr {
+    margin-bottom: 1rem;
+  }
+  .publication-teaser {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+/* 大屏幕（非移动端）样式 */
+@media (min-width: 768px) {
+  .publication-authors-teaser {
+    align-items: center;
+  }
+  .publication-authors-teaser > .authors {
+    flex: 0 0 70%; /* 左侧占据 70% */
+  }
+  .publication-authors-teaser > .teaser {
+    flex: 0 0 30%; /* 右侧占据 30% */
+    text-align: right;
+  }
+}
+
+.conference-tag {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  //background-color: #ffeb3b;
+  font-size: 15px;
+  font-style: italic;
+  color: #ffffff;
+  padding: 2px 20px;
+  border-radius: 5px;
+  //font-size: 12px;px
 }

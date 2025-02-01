@@ -95,20 +95,21 @@ publications:
         link: https://harryxd2018.github.io/      # TODO: update the link
         authors: '<strong>H. Chen</strong>, H. Zhang, S. Zhang, et al.'
         conference: ICLR'25
+        color: '#d7362c'
+        teaser: 'assets/images/teaser_iclr25.gif'
+        tldr: '
+        We tackle the challenge of generating 3D talking face animations with controllable expressions.
+        We propose Cafe-Talk, which <span style="color: #d7362c;">integrates coarse- and fine-grained multimodal controls </span>to disentangle conditions, synchronize lip movements, enhance expressiveness, and enable precise control.
+        '
+
 
       - title: Sequential Texts Driven Cohesive Motions Synthesis with Natural Transitions
         link: https://druthrie.github.io/sequential-texts-to-motion/
         authors: 'S. Li, S. Zhuang, W. Song, X. Zhang, <strong>H. Chen</strong>, A. Hao'
         conference: ICCV'23
+        color: '#269abc'
+        teaser: 'assets/images/teaser_iccv23.gif'
+        tldr: 'We address the problem of <span style="color: #269abc;">synthesizing seamless human motion 
+        from sequential texts with semantic coherence and natural transitions. </span>It uses a framework with 
+        L2G semantic fusion and transition reasoning modules, along with a custom transition loss and a new STDM dataset.'
 
-#      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-#        link: "#"
-#        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-#        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-#      - title: A syntax directed compiler for Algol 60
-#        link: "#"/
-#        authors: Edgar T. Irons
-#        conference: "Comm. ACM 4 (1961), 51–55"
-
-            #footer: >
-            #Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
