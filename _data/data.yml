@@ -92,7 +92,7 @@ publications:
 #      bibendum fringilla a eu lectus.
     papers:
       - title: 'Cafe-Talk: Generating 3D Talking Face Animation with Multimodal Coarse- and Fine-grained Control'
-        link: https://harryxd2018.github.io/      # TODO: update the link
+        link: https://harryxd2018.github.io/cafe-talk
         authors: '<strong>H. Chen</strong>, H. Zhang, S. Zhang, et al.'
         conference: ICLR'25
         color: '#d7362c'
