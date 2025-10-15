@@ -55,7 +55,8 @@ sidebar:
 career-profile:
     title: About Me
     summary: |
-        I am a Ph.D student with Beihang University, supervised by <a href="https://scholar.google.com/citations?user=hn0KFx8AAAAJ" target="_blank">Prof. Shuai Li</a>. I am also a research intern with Kling Team, Kuaishou. My research interests ground on facial behavior **understanding** and **generation**, and currently I am working on **conversational avatar**. 
+        I am a Ph.D candidate with Beihang University, supervised by <a href="https://scholar.google.com/citations?user=hn0KFx8AAAAJ" target="_blank" style="color:#425F67"><u>Prof. Shuai Li</u></a>. I am also a research intern with Kling Team, Kuaishou. My research interests ground on facial behavior **understanding** and **generation**, and currently I am working on **conversational avatar**. 
+        I served as reviewer of ICLR and ECAI. 
 
 news:
     title: News
