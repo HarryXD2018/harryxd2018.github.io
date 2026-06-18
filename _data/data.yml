@@ -56,15 +56,17 @@ career-profile:
     title: About Me
     summary: |
         I am a Ph.D candidate with Beihang University, supervised by <a href="https://scholar.google.com/citations?user=hn0KFx8AAAAJ" target="_blank" style="color:#425F67"><u>Prof. Shuai Li</u></a>. I am also a research intern with Kling Team, Kuaishou. My research interests ground on facial behavior **understanding** and **generation**, and currently I am working on **conversational avatar**. 
-        I served as reviewer of ICLR and ECAI. 
+        I served as reviewer of ICLR, CVPR, ECCV and ECAI. 
 
 news:
     title: News
     info:
         - detail: |
+            **[2024/01/30]**: I finished my Spanish class on Duolingo. Me puedes hablar español ahora. 
+        - detail: |
             **[2024/01/02]**: My first day with Y-tech, Kuaishou as a research intern.
         - detail: |
-            **[2022/11/20]**: I present an oral lecture online about our recent work on digital standardized patient history asking system on ChinaVR 2022, Kuming, China. 
+            **[2022/11/20]**: I gave an oral presentation online about our recent work on ChinaVR 2022. 
         - detail: |
             **[2022/08/31]**: My first day in BUAA.
         - detail: |
@@ -92,9 +94,22 @@ publications:
 #      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
 #      bibendum fringilla a eu lectus.
     papers:
+      - title: 'MindFlow: Harmonizing Cognitive Semantics and Acoustic Dynamics for Facial Animation Generation in Dyadic Conversations'
+        link: https://harryxd2018.github.io/
+        authors: '<strong>H. Chen</strong>, H. Zhang, X. He, *et al.*'
+        conference: ECCV'26
+        color: '#8250DE'
+        teaser: 'assets/images/teaser_mf26.gif'
+        tldr: '
+        We tackle rigid and emotionally hollow facial expressions in dyadic conversation animation
+        by enabling <span style="color: #8250DE;"> continuous emotion reasoning from streaming audio </span> 
+        and seamless facial motion generation across both speaking and listening states.
+        '
+
+    
       - title: 'Cafe-Talk: Generating 3D Talking Face Animation with Multimodal Coarse- and Fine-grained Control'
         link: https://harryxd2018.github.io/cafe-talk
-        authors: '<strong>H. Chen</strong>, H. Zhang, S. Zhang, et al.'
+        authors: '<strong>H. Chen</strong>, H. Zhang, S. Zhang, *et al.*'
         conference: ICLR'25
         color: '#d7362c'
         teaser: 'assets/images/teaser_iclr25.gif'
