@@ -95,7 +95,7 @@ publications:
 #      bibendum fringilla a eu lectus.
     papers:
       - title: 'MindFlow: Harmonizing Cognitive Semantics and Acoustic Dynamics for Facial Animation Generation in Dyadic Conversations'
-        link: https://harryxd2018.github.io/
+        link: https://harryxd2018.github.io/MindFlow/
         authors: '<strong>H. Chen</strong>, H. Zhang, X. He, *et al.*'
         conference: ECCV'26
         color: '#8250DE'
