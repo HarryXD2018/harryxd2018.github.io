@@ -16,36 +16,42 @@
   </div><!--//intro-->
   {% endif %}
 
-<!-- 修改后的 Jekyll 模板 -->
-{% for publication in publications.papers %}
-<div class="publication-block" style="margin-bottom: 20px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
-  {% if publication.link %}
-  <div>
-    <a href="{{ publication.link }}" target="_blank" style="font-size: 16px; color: #4a6a76">{{ publication.title }}</a>
-  </div>
-  {% else %}
-  <div>
-    {{ publication.title }}
-  </div>
-  {% endif %}
+<!-- 第一作者论文：直接展示；其余：折叠 -->
+{% assign sorted_papers = publications.papers | sort: 'year' | reverse %}
+{% assign first_author_papers = sorted_papers | where: 'first_author', true %}
+{% assign other_papers = sorted_papers | where_exp: 'p', 'p.first_author != true' %}
 
-  <div class="publication-authors-teaser">
-    <div class="authors">
-      <div class="publication-authors">{{ publication.authors | markdownify }}</div>
-      {% if publication.tldr %}
-      <div class="publication-tldr">{{ publication.tldr | markdownify }}</div>
-      {% endif %}
-    </div>
-    {% if publication.teaser %}
-    <div class="teaser">
-      <img src="{{ publication.teaser }}" alt="Teaser" style="width: 100%;">
-    </div>
-    {% endif %}
-  </div>
+{%- comment -%}
+  配色自动分配：条目可不写 color，按顺序从调色板取色；
+  也可在 data.yml 的 publications.palette 里自定义调色板，或给单条目写 color 覆盖。
+{%- endcomment -%}
+{% if publications.palette %}
+  {% assign palette = publications.palette %}
+{% else %}
+  {% assign palette = '#8250DE,#d7362c,#269abc,#2da44e,#bf8700,#0969da,#cf222e' | split: ',' %}
+{% endif %}
+{% assign color_index = 0 %}
 
-  <div class="conference-tag" style="background-color: {{ publication.color }};">{{ publication.conference }}</div>
-</div>
+{% for publication in first_author_papers %}
+  {% assign pick = color_index | modulo: palette.size %}
+  {% assign color = publication.color | default: palette[pick] %}
+  {% include publication-item.html publication=publication color=color %}
+  {% assign color_index = color_index | plus: 1 %}
 {% endfor %}
+
+{% if other_papers.size > 0 %}
+<details class="publications-others">
+  <summary style="cursor: pointer; margin-bottom: 15px; color: #4a6a76;">
+    Other publications ({{ other_papers.size }})
+  </summary>
+  {% for publication in other_papers %}
+    {% assign pick = color_index | modulo: palette.size %}
+    {% assign color = publication.color | default: palette[pick] %}
+    {% include publication-item.html publication=publication color=color %}
+    {% assign color_index = color_index | plus: 1 %}
+  {% endfor %}
+</details>
+{% endif %}
 
 </section><!--//section-->
 {% endif %}

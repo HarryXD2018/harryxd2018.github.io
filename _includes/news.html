@@ -5,22 +5,72 @@
       <span class="fa-stack fa-xs">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-light fa-newspaper fa-stack-1x fa-inverse"></i>
-		<!-- <i class="fas fa-duotone fab fa-google fa-sparkles fa-stack-1x fa-inverse"></i> -->
       </span>
       {{ news.title }}
     </h2>
 
     {% for a_news in news.info %}
-    <div class="item">
-	<ul> 
-	  <li>{{a_news.detail | markdownify}}</li>
-	  <!-- <li>[{{a_news.time | markdownify}}]: {{a_news.detail | markdownify}}</li> -->
-      <!-- <!-- <div class="details"> -->
-        <!-- {{ graduation.details | markdownify }} -->
-      <!-- </div><!--//details-->
-	</ul>
-    </div><!--//item-->
+      {% if forloop.index > 2 %}
+        <div class="item news-item news-extra" style="display:none">
+      {% else %}
+        <div class="item news-item">
+      {% endif %}
+        <ul>
+          <li>{{a_news.detail | markdownify}}</li>
+        </ul>
+      </div><!--//item-->
     {% endfor %}
 
+    {% if news.info.size > 2 %}
+      <div class="news-toggle-wrap">
+        <a href="#" class="news-toggle-btn" onclick="toggleNews(event)">
+          <i class="fas fa-chevron-down news-toggle-icon"></i> Show all {{ news.info.size }} news
+        </a>
+      </div>
+    {% endif %}
+
   </section><!--//section-->
+
+  <script>
+    function toggleNews(e) {
+      e.preventDefault();
+      var extras = document.querySelectorAll('.news-extra');
+      var btn = document.querySelector('.news-toggle-btn');
+      var icon = document.querySelector('.news-toggle-icon');
+      var totalCount = {{ news.info.size }};
+      var expanded = extras[0].style.display !== 'none';
+      extras.forEach(function(el) {
+        el.style.display = expanded ? 'none' : '';
+      });
+      if (expanded) {
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+        btn.innerHTML = '<i class="fas fa-chevron-down news-toggle-icon"></i> Show all ' + totalCount + ' news';
+      } else {
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+        btn.innerHTML = '<i class="fas fa-chevron-up news-toggle-icon"></i> Show less';
+      }
+    }
+  </script>
+
+  <style>
+    .news-toggle-wrap {
+      margin-top: 4px;
+      margin-left: 1.2em;
+    }
+    .news-toggle-btn {
+      font-size: 0.85em;
+      color: #999;
+      text-decoration: none;
+    }
+    .news-toggle-btn:hover {
+      color: #666;
+      text-decoration: none;
+    }
+    .news-toggle-icon {
+      font-size: 0.8em;
+      margin-right: 3px;
+    }
+  </style>
 {% endif %}

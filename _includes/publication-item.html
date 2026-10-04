@@ -1,0 +1,43 @@
+{% assign publication = include.publication %}
+{% assign color = include.color %}
+<div class="publication-block" style="margin-bottom: 20px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
+  {% if publication.link %}
+  <div>
+    <a href="{{ publication.link }}" target="_blank" style="font-size: 16px; color: #4a6a76">{{ publication.title }}</a>
+  </div>
+  {% else %}
+  <div>
+    {{ publication.title }}
+  </div>
+  {% endif %}
+
+  <div class="publication-authors-teaser">
+    <div class="authors">
+      <div class="publication-authors">{{ publication.authors | markdownify }}</div>
+      {% if publication.tldr %}
+      {%- comment -%}
+        tldr 中用 ==文字== 标记需要高亮的片段，颜色自动取本条目的主题色。
+      {%- endcomment -%}
+      {%- assign tldr_parts = publication.tldr | split: '==' -%}
+      {%- capture tldr_html -%}
+        {%- for part in tldr_parts -%}
+          {%- assign is_highlight = forloop.index0 | modulo: 2 -%}
+          {%- if is_highlight == 1 -%}
+            <span style="color: {{ color }};">{{ part }}</span>
+          {%- else -%}
+            {{ part }}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endcapture -%}
+      <div class="publication-tldr">{{ tldr_html | markdownify }}</div>
+      {% endif %}
+    </div>
+    {% if publication.teaser %}
+    <div class="teaser">
+      <img src="{{ publication.teaser }}" alt="Teaser" style="width: 100%;">
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="conference-tag" style="background-color: {{ color }};">{{ publication.conference }}</div>
+</div>

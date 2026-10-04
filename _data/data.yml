@@ -62,7 +62,15 @@ news:
     title: News
     info:
         - detail: |
-            **[2024/01/30]**: I finished my Spanish class on Duolingo. Me puedes hablar español ahora. 
+            **[2026/09/27]**: I reached my 1000th day as a research intern with Kling AI.
+        - detail: |
+            **[2026/06/18]**: One first-author paper was accepted by ECCV 2026.
+        - detail: |
+            **[2026/05/01]**: One co-authored paper was accepted by ICML 2026.
+        - detail: |
+            **[2025/01/23]**: One first-author paper was accepted by ICLR 2025.
+        - detail: |
+            **[2024/01/30]**: I finished my Spanish class on Duolingo. Me puedes hablar español ahora.
         - detail: |
             **[2024/01/02]**: My first day with Y-tech, Kuaishou as a research intern.
         - detail: |
@@ -98,11 +106,12 @@ publications:
         link: https://harryxd2018.github.io/MindFlow/
         authors: '<strong>H. Chen</strong>, H. Zhang, X. He, *et al.*'
         conference: ECCV'26
-        color: '#8250DE'
+        first_author: true
+        year: 2026
         teaser: 'assets/images/teaser_mf26.gif'
         tldr: '
         We tackle rigid and emotionally hollow facial expressions in dyadic conversation animation
-        by enabling <span style="color: #8250DE;"> continuous emotion reasoning from streaming audio </span> 
+        by enabling ==continuous emotion reasoning from streaming audio==
         and seamless facial motion generation across both speaking and listening states.
         '
 
@@ -111,11 +120,12 @@ publications:
         link: https://harryxd2018.github.io/cafe-talk
         authors: '<strong>H. Chen</strong>, H. Zhang, S. Zhang, *et al.*'
         conference: ICLR'25
-        color: '#d7362c'
+        first_author: true
+        year: 2025
         teaser: 'assets/images/teaser_iclr25.gif'
         tldr: '
         We tackle the challenge of generating 3D talking face animations with controllable expressions.
-        We propose Cafe-Talk, which <span style="color: #d7362c;">integrates coarse- and fine-grained multimodal controls </span>to disentangle conditions, synchronize lip movements, enhance expressiveness, and enable precise control.
+        We propose Cafe-Talk, which ==integrates coarse- and fine-grained multimodal controls== to disentangle conditions, synchronize lip movements, enhance expressiveness, and enable precise control.
         '
 
 
@@ -123,9 +133,10 @@ publications:
         link: https://druthrie.github.io/sequential-texts-to-motion/
         authors: 'S. Li, S. Zhuang, W. Song, X. Zhang, <strong>H. Chen</strong>, A. Hao'
         conference: ICCV'23
-        color: '#269abc'
+        first_author: false
+        year: 2023
         teaser: 'assets/images/teaser_iccv23.gif'
-        tldr: 'We address the problem of <span style="color: #269abc;">synthesizing seamless human motion 
-        from sequential texts with semantic coherence and natural transitions. </span>It uses a framework with 
+        tldr: 'We address the problem of ==synthesizing seamless human motion
+        from sequential texts with semantic coherence and natural transitions.== It uses a framework with
         L2G semantic fusion and transition reasoning modules, along with a custom transition loss and a new STDM dataset.'
 
