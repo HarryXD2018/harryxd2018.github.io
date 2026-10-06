@@ -28,7 +28,13 @@
 {% if publications.palette %}
   {% assign palette = publications.palette %}
 {% else %}
-  {% assign palette = '#8250DE,#d7362c,#269abc,#2da44e,#bf8700,#0969da,#cf222e' | split: ',' %}
+  {%- comment -%}
+    默认调色板由 CIELAB 等亮度环采样而来：L*=42, C=32，色相以主题色
+    ceramic (#4B6A78, h≈232°) 为锚点依次旋转。因此 7 色的感知亮度一致，
+    对白底 (#fff/#F7F7F7) 的对比度均为 5.8–6.0:1（与正文链接色 #4a6a76 的
+    5.8:1 一致），作为正文高亮文字与标签白字背景都满足 WCAG AA。
+  {%- endcomment -%}
+  {% assign palette = '#006E8C,#4B6297,#00705F,#85527C,#566A35,#954E51,#805C31' | split: ',' %}
 {% endif %}
 {% assign color_index = 0 %}
 

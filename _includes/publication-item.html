@@ -1,6 +1,6 @@
 {% assign publication = include.publication %}
 {% assign color = include.color %}
-<div class="publication-block" style="margin-bottom: 20px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
+<div class="publication-block" style="--pub-color: {{ color }}; margin-bottom: 20px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
   {% if publication.link %}
   <div>
     <a href="{{ publication.link }}" target="_blank" style="font-size: 16px; color: #4a6a76">{{ publication.title }}</a>
@@ -23,7 +23,7 @@
         {%- for part in tldr_parts -%}
           {%- assign is_highlight = forloop.index0 | modulo: 2 -%}
           {%- if is_highlight == 1 -%}
-            <span style="color: {{ color }};">{{ part }}</span>
+            <span class="tldr-hl">{{ part }}</span>
           {%- else -%}
             {{ part }}
           {%- endif -%}
@@ -39,5 +39,5 @@
     {% endif %}
   </div>
 
-  <div class="conference-tag" style="background-color: {{ color }};">{{ publication.conference }}</div>
+  <div class="conference-tag">{{ publication.conference }}</div>
 </div>

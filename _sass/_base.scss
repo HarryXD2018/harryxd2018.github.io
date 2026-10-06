@@ -296,6 +296,11 @@ p {
   }
   .publication-tldr {
     margin-bottom: 1rem;
+
+    .tldr-hl {
+      color: var(--pub-color, #{$theme-color});
+      font-weight: 600;
+    }
   }
   .publication-teaser {
     text-align: center;
@@ -320,7 +325,7 @@ p {
   position: absolute;
   top: -10px;
   left: -10px;
-  //background-color: #ffeb3b;
+  background-color: var(--pub-color, #{$theme-color});
   font-size: 15px;
   font-style: italic;
   color: #ffffff;

@@ -140,3 +140,15 @@ publications:
         from sequential texts with semantic coherence and natural transitions.== It uses a framework with
         L2G semantic fusion and transition reasoning modules, along with a custom transition loss and a new STDM dataset.'
 
+      - title: 'From Inpainting to Editing: A Self-Bootstrapping Framework for Context-Rich Visual Dubbing'
+        link: https://hjrphoebus.github.io/X-Dub/
+        authors: 'X. He, H. Zhang, <strong>H. Chen</strong>, *et al.*'
+        conference: ICML'26
+        first_author: false
+        year: 2023
+        teaser: 'assets/images/teaser_icml26.png'
+        tldr: '
+        We tackle the identity drift, lip-shape leakage, and fragility of mask-based inpainting in audio-driven visual dubbing.
+        We propose X-Dub, which ==repurposes an inpainting model as a pseudo-paired data generator to bootstrap a mask-free editing dubber==,
+        with timestep-adaptive multi-phase learning and a new X-DubBench benchmark.
+        '
