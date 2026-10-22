@@ -84,19 +84,22 @@ p {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
   .contact-list {
+    // 各图标来自不同字体（Font Awesome / Academicons），字形宽度不一，
+    // 统一套一个定宽居中的盒子，保证每行文字左边缘对齐。
     .fas,
     .fab,
     .far,
     .ai {
+      display: inline-block;
+      width: 22px;
       margin-right: 5px;
       font-size: 18px;
+      text-align: center;
       vertical-align: middle;
     }
-    // Academicons 的字形比 Font Awesome 窄，补一个固定宽度让各行图标左对齐
+    // Academicons 字形在同一字号下视觉偏小，放大以匹配 Font Awesome
     .ai {
-      display: inline-block;
-      width: 18px;
-      text-align: center;
+      font-size: 22px;
     }
     li {
       margin-bottom: 15px;
