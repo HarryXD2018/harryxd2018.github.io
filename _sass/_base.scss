@@ -86,10 +86,17 @@ p {
   .contact-list {
     .fas,
     .fab,
-    .far {
+    .far,
+    .ai {
       margin-right: 5px;
       font-size: 18px;
       vertical-align: middle;
+    }
+    // Academicons 的字形比 Font Awesome 窄，补一个固定宽度让各行图标左对齐
+    .ai {
+      display: inline-block;
+      width: 18px;
+      text-align: center;
     }
     li {
       margin-bottom: 15px;
