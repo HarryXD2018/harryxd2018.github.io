@@ -1,4 +1,5 @@
-{% assign sidebar = site.data.data.sidebar %}
+{% if page.lang == "cn" %}{% assign site_data = site.data.data_cn %}{% else %}{% assign site_data = site.data.data %}{% endif %}
+{% assign sidebar = site_data.sidebar %}
 <div class="sidebar-wrapper">
 
   <div class="profile-container">
@@ -14,6 +15,8 @@
     {% if sidebar.tagline %}
     <h3 class="tagline">{{ sidebar.tagline }}</h3>
     {% endif %}
+
+    {% include lang-switch.html %}
 
   </div><!--//profile-container-->
 

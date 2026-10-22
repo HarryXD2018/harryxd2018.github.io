@@ -1,4 +1,5 @@
-{% assign publications = site.data.data.publications %}
+{% if page.lang == "cn" %}{% assign site_data = site.data.data_cn %}{% else %}{% assign site_data = site.data.data %}{% endif %}
+{% assign publications = site_data.publications %}
 {% if publications %}
 <section class="section publications-section">
 
@@ -48,7 +49,7 @@
 {% if other_papers.size > 0 %}
 <details class="publications-others">
   <summary style="cursor: pointer; margin-bottom: 15px; color: #4a6a76;">
-    Other publications ({{ other_papers.size }})
+    {% if page.lang == "cn" %}其他论文（{{ other_papers.size }} 篇）{% else %}Other publications ({{ other_papers.size }}){% endif %}
   </summary>
   {% for publication in other_papers %}
     {% assign pick = color_index | modulo: palette.size %}

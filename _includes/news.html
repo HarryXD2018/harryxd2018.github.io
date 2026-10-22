@@ -1,4 +1,5 @@
-{% assign news = site.data.data.news %}
+{% if page.lang == "cn" %}{% assign site_data = site.data.data_cn %}{% else %}{% assign site_data = site.data.data %}{% endif %}
+{% assign news = site_data.news %}
 {% if news %}
   <section class="section news-section">
     <h2 class="section-title">
@@ -24,7 +25,7 @@
     {% if news.info.size > 2 %}
       <div class="news-toggle-wrap">
         <a href="#" class="news-toggle-btn" onclick="toggleNews(event)">
-          <i class="fas fa-chevron-down news-toggle-icon"></i> Show all {{ news.info.size }} news
+          <i class="fas fa-chevron-down news-toggle-icon"></i> {% if page.lang == "cn" %}展开全部 {{ news.info.size }} 条动态{% else %}Show all {{ news.info.size }} news{% endif %}
         </a>
       </div>
     {% endif %}
@@ -38,6 +39,8 @@
       var btn = document.querySelector('.news-toggle-btn');
       var icon = document.querySelector('.news-toggle-icon');
       var totalCount = {{ news.info.size }};
+      var moreText = {% if page.lang == "cn" %}'展开全部 ' + totalCount + ' 条动态'{% else %}'Show all ' + totalCount + ' news'{% endif %};
+      var lessText = {% if page.lang == "cn" %}'收起'{% else %}'Show less'{% endif %};
       var expanded = extras[0].style.display !== 'none';
       extras.forEach(function(el) {
         el.style.display = expanded ? 'none' : '';
@@ -45,11 +48,11 @@
       if (expanded) {
         icon.classList.remove('fa-chevron-up');
         icon.classList.add('fa-chevron-down');
-        btn.innerHTML = '<i class="fas fa-chevron-down news-toggle-icon"></i> Show all ' + totalCount + ' news';
+        btn.innerHTML = '<i class="fas fa-chevron-down news-toggle-icon"></i> ' + moreText;
       } else {
         icon.classList.remove('fa-chevron-down');
         icon.classList.add('fa-chevron-up');
-        btn.innerHTML = '<i class="fas fa-chevron-up news-toggle-icon"></i> Show less';
+        btn.innerHTML = '<i class="fas fa-chevron-up news-toggle-icon"></i> ' + lessText;
       }
     }
   </script>

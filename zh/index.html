@@ -1,0 +1,25 @@
+---
+layout: default
+lang: cn
+permalink: /zh/
+---
+
+
+
+{% include career-profile.html %}
+
+{% include news.html %}
+
+{% include publications.html %}
+
+{% unless site.data.data.sidebar.education %}
+  {% include education.html %}
+{% endunless %}
+
+{% include experiences.html %}
+
+{% include projects.html %}
+
+{% include oss-contributions.html %}
+
+{% include skills.html %}

@@ -1,0 +1,126 @@
+#
+# 中文版内容（对应 data.yml）。
+# 注意：这里的结构必须与 data.yml 保持一致，字段名不要翻译。
+#
+
+sidebar:
+    about: False # 设为 False 或注释掉即可移除侧栏中的 "how to use?"
+    education: False # 设为 False 则教育经历显示在主栏而非侧栏
+
+    # 个人信息
+    name: 陈禾嘉
+    tagline: 博士研究生
+    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # 侧栏链接
+    email: chenhj2000[at]buaa.edu.cn
+    github: HarryXD2018
+    google: HejiaChen
+
+#    languages:
+#    title: 语言
+#     info:
+#       - idiom: 中文
+#         level: 母语
+#
+#       - idiom: 英语
+#         level: 熟练
+
+    #interests:
+    # title: 兴趣爱好
+    # info:
+    #   - item: 攀岩
+    #     link:
+
+
+career-profile:
+    title: 个人简介
+    summary: |
+        我是北京航空航天大学的博士研究生，师从<a href="https://scholar.google.com/citations?user=hn0KFx8AAAAJ" target="_blank" style="color:#425F67"><u>李帅教授</u></a>，同时在快手可灵团队担任研究实习生。我的研究围绕人脸行为的**理解**与**生成**展开，目前聚焦于**对话式数字人**。此外，我也担任 ICLR、CVPR、ECCV 和 ECAI 的审稿人。
+
+news:
+    title: 近期动态
+    info:
+        - detail: |
+            **[2026/09/27]**: 我在可灵 AI 实习满 1000 天。
+        - detail: |
+            **[2026/06/18]**: 一篇一作论文被 ECCV 2026 接收。
+        - detail: |
+            **[2026/05/01]**: 一篇合作论文被 ICML 2026 接收。
+        - detail: |
+            **[2025/01/23]**: 一篇一作论文被 ICLR 2025 接收。
+        - detail: |
+            **[2024/01/30]**: 我在多邻国上完成了西班牙语课程，现在可以用西班牙语交流啦。
+        - detail: |
+            **[2024/01/02]**: 入职快手 Y-tech，开始研究实习生生涯。
+        - detail: |
+            **[2022/11/20]**: 在 ChinaVR 2022 上线上口头汇报了我们的最新工作。
+        - detail: |
+            **[2022/08/31]**: 来到北航的第一天。
+        - detail: |
+            **[2022/06/29]**: 获得学士学位，再见西电！
+
+education:
+    title: 教育经历
+    info:
+      - degree: 计算机应用技术 博士
+        university: 北京航空航天大学，中国
+        time: 2022 - 至今
+        details: |
+            我目前是北京航空航天大学虚拟现实技术与系统全国重点实验室的博士研究生，导师为李帅教授。我早期的研究兴趣是**微表情识别**（2022年，西电本科毕业设计），目前的研究方向是**语音驱动的三维说话人头**。
+      - degree: 计算机科学与技术 学士
+        university: 西安电子科技大学，中国
+        time: 2018 - 2022
+        details: |
+            我于2022年在西安电子科技大学计算机科学与技术学院获得学士学位。2020至2022 年期间，我在智能辅助教学中心（CIAT实验室）担任本科生研究助理，研究兴趣包括**学生学习投入度预测**（2020）与**头部姿态估计**（2021）。
+
+publications:
+    title: 学术论文
+    papers:
+      - title: 'MindFlow: Harmonizing Cognitive Semantics and Acoustic Dynamics for Facial Animation Generation in Dyadic Conversations'
+        link: https://harryxd2018.github.io/MindFlow/
+        authors: '<strong>H. Chen</strong>, H. Zhang, X. He, *et al.*'
+        conference: ECCV'26
+        first_author: true
+        year: 2026
+        teaser: 'assets/images/teaser_mf26.gif'
+        tldr: '
+        我们针对双人对话面部动画中表情僵硬、情感空洞的问题，
+        实现了==从流式语音中进行连续的情感推理==，
+        并在说话与倾听两种状态之间生成自然衔接的面部运动。
+        '
+
+      - title: 'Cafe-Talk: Generating 3D Talking Face Animation with Multimodal Coarse- and Fine-grained Control'
+        link: https://harryxd2018.github.io/cafe-talk
+        authors: '<strong>H. Chen</strong>, H. Zhang, S. Zhang, *et al.*'
+        conference: ICLR'25
+        first_author: true
+        year: 2025
+        teaser: 'assets/images/teaser_iclr25.gif'
+        tldr: '
+        我们聚焦于生成表情可控的三维说话人脸动画这一难题。
+        我们提出 Cafe-Talk，==融合粗粒度与细粒度的多模态控制条件==，实现条件解耦、唇形同步、表情增强与精准控制。
+        '
+
+      - title: Sequential Texts Driven Cohesive Motions Synthesis with Natural Transitions
+        link: https://druthrie.github.io/sequential-texts-to-motion/
+        authors: 'S. Li, S. Zhuang, W. Song, X. Zhang, <strong>H. Chen</strong>, A. Hao'
+        conference: ICCV'23
+        first_author: false
+        year: 2023
+        teaser: 'assets/images/teaser_iccv23.gif'
+        tldr: '我们研究==如何根据连续文本合成语义连贯、过渡自然的人体运动==。方法采用
+        L2G 语义融合与过渡推理模块，并设计了专门的过渡损失函数，同时构建了新的 STDM 数据集。'
+
+      - title: 'From Inpainting to Editing: A Self-Bootstrapping Framework for Context-Rich Visual Dubbing'
+        link: https://hjrphoebus.github.io/X-Dub/
+        authors: 'X. He, H. Zhang, <strong>H. Chen</strong>, *et al.*'
+        conference: ICML'26
+        first_author: false
+        year: 2023
+        teaser: 'assets/images/teaser_icml26.png'
+        tldr: '
+        我们针对语音驱动视觉配音中的身份漂移、唇形泄漏以及基于掩码的图像修复方法不稳定等问题，
+        提出了 X-Dub，==将图像修复模型复用为伪配对数据生成器，以自举方式训练免掩码的编辑式配音模型==，
+        并引入时间步自适应的多阶段训练策略和新的 X-DubBench 评测基准。
+        '

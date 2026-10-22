@@ -34,7 +34,11 @@
     </div>
     {% if publication.teaser %}
     <div class="teaser">
-      <img src="{{ publication.teaser }}" alt="Teaser" style="width: 100%;">
+      {%- comment -%}
+        teaser 在 data.yml 里写的是相对路径，必须拼上 baseurl 变成站点绝对路径，
+        否则子目录页面（如 /zh/）会把它解析成 /zh/assets/... 而加载失败。
+      {%- endcomment -%}
+      <img src="{{ publication.teaser | relative_url }}" alt="Teaser" style="width: 100%;">
     </div>
     {% endif %}
   </div>

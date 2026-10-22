@@ -1,4 +1,5 @@
-{% assign projects = site.data.data.projects %}
+{% if page.lang == "cn" %}{% assign site_data = site.data.data_cn %}{% else %}{% assign site_data = site.data.data %}{% endif %}
+{% assign projects = site_data.projects %}
 {% if projects %}
 <section class="section projects-section">
 
